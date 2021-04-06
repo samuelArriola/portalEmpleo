@@ -1,0 +1,126 @@
+<div class="container">
+    <div class="pt-5">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>empresa/panel"><i
+                        class="fas fa-home fa-sm fa-fw mr-1 text-secondary"></i>Panel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active rounded-pill" style="background-color: #7ad972;border-color: #7ad972;"
+                    href="<?php echo constant('URL');?>empresa/candidatos"><i
+                        class="far fa-list-alt fa-sm fa-fw mr-1 text-white"></i> Candidatos</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pt-3 pb-2">
+                <h5 class="text-left text-dark pl-2 text-uppercase font-weight-bolder" style="border-left: 4px solid #47ca3c;">Gestión candidatos</h5>
+            </div>
+        </div>
+        
+        <div class="col-md-12">
+            <form data-toggle="validator" id="validate" method="post" enctype="multipart/form-data" class="pb-2">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label>Convocatoria Laboral:</label>
+                        <select type="text" class="form-control" name="convocatoria_lab" id="convocatoria_lab" placeholder="">
+
+                        </select>
+                    </div>
+                </div>
+                
+                <button id="btn-filtrocandidatos" class="btn btn-success rounded-pill" onclick="getConvoCandidatos(1)">BUSCAR</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xl-12 col-lg-12">
+            <table id="table_busquedauser" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Cv</th>
+                        <th>Identificación</th>
+                        <th>Nombre Completo</th>
+                        <th>Edad</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="results_candidatos">
+
+                </tbody>
+            </table>
+            
+            <nav aria-label="Page navigation example">
+                <ul class="pagination" id="paginador">
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Modal ConvoCandidatos-->
+    <div class="modal fade" id="convocandidato" tabindex="-1" role="dialog" aria-labelledby="convocandidatoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="convocandidatoTitle">Datos del Candidato </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="convoCandidatosclose();">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container bg-info pt-2 pb-2 rounded">
+                        <h5 class="text-left text-white text-uppercase font-weight-bolder text-center" id="nombUser" style="margin-top:17px;text-shadow: 2px 2px 2px rgb(0 0 0 / 29%);"></h5>
+                        <h6 class="text-left text-white text-uppercase text-center" id="perfilUser" style="margin-top: -25px;margin-bottom: 110px;font-size: 1.2em;line-height: 2.5;font-weight: 300;text-shadow: 2px 2px 2px rgb(0 0 0 / 29%);"></h6>
+                    </div>
+                    <div class="container bg-white">
+                        <div class="row">
+                            <div class="col col-md-12">
+                                <div id="fotoPerfilUser" class="fPerfilUser"></div>
+                                <div>
+                                    <div class="text-center text-dark shadow p-3 mt-3 mb-5 bg-white rounded">
+                                        <p id="descPerfilUser" class="mt-5"></p>
+                                        <div id="downloadcvUser"></div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="text-left">
+                                    <h6 class="text-left text-dark pl-2 mb-3 text-uppercase font-weight-bolder" style="border-left: 4px solid #47ca3c;">Datos Personales</h6>
+                                    <div id="result-datospersonales">
+                                        <div class="row">
+                                            <div class="col-xl-6 col-lg-6">
+                                                <p id="fnac_pers"></p>
+                                                <p id="direccion"></p>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6">
+                                                <p id="emai_pers"></p>
+                                                <p id="telefono1"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card p-4 text-center">
+                            <p class="font-weight-bold mb-0">Gestionar Cv</p>
+                            <small class="font-italic p-3">Actualizar estado del postulante</small>
+                            <div id="results_estados"></div>
+                            <small class="pb-0 mb-0 text-info font-italic"><i class="fas fa-info-circle"></i>
+                                Sino actualiza el estado actual del candidato, su estado por defecto será en espera.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="convoCandidatosclose();" id="userBusquedaclose" class="btn btn-secondary rounded-pill" data-dismiss="modal">CANCELAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

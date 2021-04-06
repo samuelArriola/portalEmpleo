@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="pt-5">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/panel"><i class="fas fa-home fa-sm fa-fw mr-1 text-secondary"></i>Panel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active rounded-pill" style="background-color: #17a2b8;border-color: #17a2b8;"
+                href="<?php echo constant('URL');?>persona/reportes"><i class="fas fa-chart-bar fa-sm fa-fw mr-1 text-white"></i> Reportes Estadísticos</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pt-3 pb-2">
+                <h5 class="text-left text-dark pl-2 text-uppercase font-weight-bolder"
+                    style="border-left: 4px solid #336699;">Mis Reportes Estadísticos</h5>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-xl-12 col-lg-12 pt-2 pb-3">
+            <p class="text-justify">En esta sección podrá ver los reportes estadísticos de todas sus postulaciones. </p>
+            <select class="form-control" id="filtrarReporte" name="filtrarReporte" onclick="getDatosReporte(1);">
+                <option value="0">En espera</option>
+                <option value="1">Visto</option>
+                <option value="2">Cerrado</option>
+                <option value="3">Todas las postulaciones</option>
+              </select>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12">
+            <table id="table_reporte" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Pefil</th>
+                        <th>Fecha de Postulación</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="datosReportes"></tbody>
+            </table>
+            
+            <div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+            <label id="reporteMessage" class="text-danger font-italic pl-2"></label>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination" id="paginador">
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

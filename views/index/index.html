@@ -1,0 +1,185 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="<?php echo constant('URL');?>resource/images/banners/Banner1.png" class="d-block w-100"
+                alt="banner">
+        </div>
+        <div class="carousel-item">
+            <img src="<?php echo constant('URL');?>resource/images/banners/Banner2.png" class="d-block w-100"
+                alt="banner">
+        </div>
+        <div class="carousel-item">
+            <img src="<?php echo constant('URL');?>resource/images/banners/Banner3.png" class="d-block w-100"
+                alt="banner">
+        </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<section class="pt-4 pb-4" style="background:#ffffff">
+    <div class="container">
+        <div class="row pt-2 pb-4">
+            <div class="col-md-8">
+                <h3>¡NUESTRO EQUIPO TE DA LA BIENVENIDA!</h3><br>
+                <p class="text-justify">Ofrecemos a nuestros usuarios un portal de empleo para la gestión de hojas de
+                    vida que les permitirá
+                    acceder a excelentes oportunidades laborales y contactar
+                    con talento humano competente de forma rápida, sencilla, eficaz y segura.</p>
+                <a href="<?php echo constant('URL');?>user/login" class="btn btn-info float-left rounded-pill">Iniciar
+                    Sesión</a>
+            </div>
+
+            <div class="col-md-4">
+                <img src="<?php echo constant('URL');?>resource/images/fondo/imgBanda.png"
+                    class="d-block w-100 float-sm-left" alt="imgBanda">
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+<section class="text-dark">
+    <div class="container-fluid">
+        <div class="row pt-4">
+            <div class="col-md-6 pr-5 pl-5 pt-5 pb-5" style="background:#BCEEB8;">
+                <h3 class="text-center">Perfil Empresa</h3>
+                <p class="text-justify">
+                    Encuentra talento humano altamente capacitado para ocupar los puestos vacantes de tu empresa.
+                </p>
+                <p class="text-justify">Accines que podrás realizar en este perfil:</p>
+                <p><i class="fas fa-star mr-2"></i>Publica ofertas laborales.</p>
+                <p><i class="fas fa-star mr-2"></i>Recepciona CVs de potenciales futuros empleados.</p>
+                <p><i class="fas fa-star mr-2"></i>Gestiona canditaduras.</p>
+                <center><a href="<?php echo constant('URL');?>user/registroempresa"
+                        class="btn btn-info text-center rounded-pill"><i class="fa fa-building" aria-hidden="true"></i>
+                        Registrar Empresa</a></center>
+            </div>
+
+            <div class="col-md-6 pr-5 pl-5 pt-5 pb-5" style="background:#CBF3CA;">
+                <h3 class="text-center">Perfil Candidato</h3>
+                <p class="text-justify">
+                    Descubre cuáles son las ofertas y oportunidades laborales de las empresas industriales en la zona
+                    Mamonal.
+                </p>
+                <p class="text-justify">Accines que podrás realizar en este perfil:</p>
+                <p><i class="fas fa-star mr-2"></i>Regístrate y crea un perfil.</p>
+                <p><i class="fas fa-star mr-2"></i>Digitaliza tu CVs o súbelo al portal en formato Word o PDF.</p>
+                <p><i class="fas fa-star mr-2"></i>Postúlate a una convocatoria laboral.</p>
+                <center><a href="<?php echo constant('URL');?>user/registro"
+                        class="btn btn-info text-center rounded-pill"><i class="fa fa-user-circle"
+                            aria-hidden="true"></i> Registrar Perfil</a></center>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="pt-4 pb-4" style="background:#ffffff">
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-md-12">
+                <h3 class="pt-4 text-center pb-4">Últimas Ofertas Publicadas</h3>
+                <div class="owl-carousel owl-theme owl-loaded carouselConvocatorias">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" id="resultsConvo">
+                        </div>
+                    </div>
+                </div>
+                <div id="btn-todas" class="text-center">
+                    <a href="<?php echo constant('URL');?>user/convocatorias"
+                        class="btn btn-info text-center rounded-pill"><i class="fa fa-list-alt" aria-hidden="true"></i>
+                        Ver Todas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-4 pb-4" style="background:#DAF7DC">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h4 class="text-dark font-weight-bold">¡UN ALIADO PARA TU FUTURO LABORAL!</h4>
+                <p class="mb-0 text-justify">Accede a todas nuestras oportunidades laborales y consigue el empleo de tus
+                    sueños.</p>
+            </div>
+            <div class="col-lg-4 text-lg-right"><a class="btn btn-marketing btn-info rounded-pill mr-3"
+                    href="<?php echo constant('URL');?>user/registro">¡Regístrate ya!</a><a
+                    class="btn btn-marketing btn-success rounded-pill" href="<?php echo constant('URL');?>user/contacto">Contáctanos</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-4 pb-4" style="background:#ffffff">
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-md-12">
+                <h3 class="pt-4 text-center pb-4">RED DE ALIADOS</h3>
+                <div class="owl-carousel owl-theme owl-loaded carouselImg">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item"><img class="w-50"
+                                    src="<?php echo constant('URL');?>resource/images/logos/cedetec.png"></div>
+                            <div class="owl-item"><img class="w-50"
+                                    src="<?php echo constant('URL');?>resource/images/logos/membrillal.png"></div>
+                            <div class="owl-item"><img class="w-25"
+                                    src="<?php echo constant('URL');?>resource/images/logos/comite.png"></div>
+                            <div class="owl-item"><img class="w-25"
+                                    src="<?php echo constant('URL');?>resource/images/logos/logotipocurn.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Registro-->
+<div class="modal fade" id="verOferta" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+    aria-labelledby="verOfertaTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-white" style="background: #86BBD8;border: #336699;">
+                <h5 class="modal-title text-uppercase" id="verOfertaTitle"></h5>
+            </div>
+            <div class="modal-body pr-5 pl-5">
+                <div class="pt-2 pb-2">
+                    <h5 id="cargo" class="mb-0"></h5>
+                    <h6 id="perfil" class="font-italic"></h6>
+                </div>
+
+
+                <h6>Descripción del Cargo</h6>
+                <div id="verOfertaDescripcion">
+
+                </div>
+                <div class="mt-3">
+                    <h6 class="font-italic font-weight-bold">Datos Relevantes:</h6>
+                    <p id="salario"></p>
+                </div>
+            </div>
+            <div class="modal-footer" style="background: #86BBD8;border: #336699;">
+                <button id="verOfertaClose" class="btn btn-secondary rounded-pill"
+                    data-dismiss="modal">CANCELAR</button>
+                <button id="btn-postular" class="btn btn-success rounded-pill">REGISTRAR</button>
+            </div>
+        </div>
+    </div>
+</div>

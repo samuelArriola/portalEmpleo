@@ -1,0 +1,87 @@
+<div class="card-body p-0 bg-white">
+    <div class="row">
+        <div class="col-lg-5 d-none d-lg-block bg-register-image-empresa"></div>
+        <div class="col-lg-7">
+            <div class="p-5">
+                <header class="auth-header text-center">
+                    <h1 class="auth-title text-left text-dark"><i class="fa fa-building" aria-hidden="true"></i> REGISTRO DE EMPRESAS</h1>
+                </header>
+                <div class="auth-content">
+                    <form id="validate" enctype="multipart/form-data" method="POST">
+                        <div class="card-group mt-3">
+                            <div class="card pt-b2">
+                                <div class="card-body text-center">
+                                    <center>
+                                        <h6>Subir logo o imagen</h6>
+                                        <output class="d-flex justify-content-center pt-1 pb-1" id="fotos"></output>
+                                    </center>
+                                    <a>
+                                        <center>
+                                            <div class="form-group d-flex justify-content-center">
+                                                <input accept="image/*" type="file" class="form-control-file" id="logo"
+                                                    name="logo" style="width: 334px;">
+                                            </div>
+                                        </center>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="id">Nit</label>
+                                <input type="number" class="form-control underlined" name="id" id="id"
+                                    placeholder="Digite Nit de la empresa" required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Nombre de la empresa</label>
+                                <input type="text" class="form-control" name="nomb_emp" id="nomb_emp" placeholder=""
+                                    style="text-transform:uppercase;" required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Razón social</label>
+                                <input type="text" class="form-control" name="razon_s" id="razon_s" placeholder=""
+                                    style="text-transform:uppercase;" required minlength="150" maxlength="200">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Dirección</label>
+                                <input type="text" class="form-control" name="direccion" id="direccion" placeholder=""
+                                    style="text-transform:uppercase;" required>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Teléfono</label>
+                                <input type="number" class="form-control" name="telefono_emp" id="telefono_emp"
+                                    placeholder="" style="text-transform:uppercase;" required>
+                            </div>
+
+
+                            <div class="form-group col-md-6">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control underlined" name="password" id="password"
+                                    minlength="8" maxlength="16" placeholder="Digite su contraseña" required>
+                            </div>
+
+                            <label id="registerEMessage" class="text-danger float-left"></label>
+                            <button onclick="registroEmpresaUser();" id="btn-registro-empresaU"
+                                class="btn btn-info text-center rounded-pill btn-block">REGISTRAR</button>
+
+                        </div>
+                    </form>
+
+                    <div class="pt-2 text-dark text-center">
+                        <p class="pb-0 mb-0"><i class="fas fa-info-circle"></i>
+                            Al hacer clic en registrar, acepta la <a href="<?php echo constant('URL');?>legal/politica">política de privacidad</a> de ZIMEP.
+                        </p>
+        
+                        <p>¿Tienes ya una cuenta? <a href="<?php echo constant('URL');?>user/login">Iniciar sesión</a></p>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

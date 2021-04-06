@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="pt-5">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>empresa/panel"><i
+                        class="fas fa-home fa-sm fa-fw mr-1 text-secondary"></i>Panel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active rounded-pill" style="background-color: #7ad972;border-color: #7ad972;"
+                    href="<?php echo constant('URL');?>user/perfil"><i
+                        class="fas fa-cogs fa-sm fa-fw mr-1 text-white"></i> Perfil</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pt-3 pb-2">
+                <h5 class="text-left text-dark pl-2 text-uppercase font-weight-bolder" style="border-left: 4px solid #47ca3c;">Actualizar Perfil</h5>
+                <p class="text-dark">Por favor, diligencie el siguiente formulario.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-12 pb-5">
+            <div class="card">
+                <div class="card-header">
+                    Información Personal
+                </div>
+                <div class="card-body">
+                    <form id="validate" enctype="multipart/form-data" method="POST">
+                        <div class="form-row pr-2 pl-2">
+
+                            <div class="form-group col-md-4">
+                                <label>N° Identificación</label>
+                                <input type="number" class="form-control" name="id" id="id"  disabled/>
+                            </div>
+
+                            <div class="form-group col-md-4">
+                                <label>Nombre</label>
+                                <input type="text" class="form-control text-uppercase" name="nomb_emp" id="nomb_emp" required/>
+                            </div>
+
+
+                            <div class="form-group col-md-4">
+                                <label>Correo Eléctronico</label>
+                                <input type="text" class="form-control" name="emai_emp" id="emai_emp" required/>
+                            </div>
+
+
+                        </div>
+
+                        <div class="card-group pr-2 pl-2">
+                            <div class="card pt-b2">
+                                <div class="card-body text-center">
+                                    <center>
+                                        <h6>Subir foto o imagen</h6>
+                                        <output class="d-flex justify-content-center pt-1 pb-1" id="fotos"></output>
+                                    </center>
+                                    <a>
+                                        <center>
+                                            <div class="form-group d-flex justify-content-center">
+                                                <input accept="image/*" type="file" class="form-control-file" id="perfil"
+                                                    name="perfil" style="width: 334px;">
+                                            </div>
+                                        </center>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <label id="registerMessage" class="text-danger float-left"></label>
+                        <button id="btn-act-perfil" class="btn btn-success mt-2 mr-2 ml-2 rounded-pill">ACTUALIZAR</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+       
+    </div>
+</div>

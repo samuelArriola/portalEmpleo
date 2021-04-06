@@ -1,0 +1,21 @@
+#Activar RewriteEngine (Motor de sobre escritura)
+RewriteEngine on
+
+#sobre escribir el directorio de carpetas que se ingresará
+#en la barra de direcciones del navegador
+#Esta condición es verdaderoa cuando la ruta REQUEST_FILENAME no hace referencia a una que existe en el
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Archivos que tengamos en las carpetas
+#Esta condición es verdadera cuando la ruta REQUEST_FILENAME no hace referencia a un archivo existente en el servidor.
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#La parte  ^(.*)$ le dice al módulo de la reescritura que queremos pasar la rura
+#completa solicitada como un parámetro. La parte de QSA le dice al módulo que
+#anexe cualquier cadena de consulta a la solicitud
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+# Use PHP71 as default
+AddHandler application/x-httpd-php71 .php
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /opt/php71/lib
+</IfModule>

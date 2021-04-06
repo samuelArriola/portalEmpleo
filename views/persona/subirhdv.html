@@ -1,0 +1,146 @@
+<div class="container pb-5">
+    <div class="pt-5 pb-2">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/panel"><i
+                        class="fas fa-home fa-sm fa-fw mr-1 text-secondary"></i>Panel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/hojadevida"><i
+                        class="fas  fa-file-alt fa-sm fa-fw mr-1 text-secondary"></i> Gestión Hoja de Vida</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active rounded-pill" style="background-color: #17a2b8;border-color: #17a2b8;"
+                    href="<?php echo constant('URL');?>persona/subirhdv"><i
+                        class="fas fa-file-upload fa-sm fa-fw mr-1 text-white"></i> Subir HdV</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pt-3 pb-2">
+                <h5 class="text-left text-dark pl-2 text-uppercase font-weight-bolder"
+                    style="border-left: 4px solid #336699;">Subir Hoja de Vida</h5>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <form data-toggle="validator" id="validate" method="post" enctype="multipart/form-data">
+                <div class="card-group">
+                    <div class="card pt-b2">
+                        <div class="card-body text-center">
+                            <center>
+                                <h6>Subir Archivo</h6>
+                                <output class="d-flex justify-content-center pt-1 pb-1" name="file_hdv"
+                                    id="file_hdv"></output>
+                            </center>
+                            <a>
+                                <center>
+                                    <div class="form-group d-flex justify-content-center">
+                                        <input accept=".doc,.docx,.pdf" type="file" class="form-control-file"
+                                            id="hoja_de_vida" name="hoja_de_vida" style="width: 334px;" />
+                                    </div>
+                                </center>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button id="subir_hdv" class="btn btn-success rounded-pill mt-2">SUBIR HDV</button>
+            </form>
+        </div>
+
+        <div class="col-md-12">
+            <div class="pt-3 pb-2">
+                <h5 class="text-left text-dark pl-2 text-uppercase font-weight-bolder"
+                    style="border-left: 4px solid #336699;">Historial Hoja de Vida</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12">
+            <table id="table_hdv" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr class="text-center">
+                        <th>Por defecto</th>
+                        <th>Hoja de Vida en Word/PDF</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsHdv">
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination" id="paginador">
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!--Modal Actualizar-->
+    <div class="modal fade" id="ModaleditEstadoHdv" tabindex="-1" role="dialog"
+        aria-labelledby="ModaleditEstadoHdvLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModaleditEstadoHdvLabel">Actualizar Estado Hoja de Vida en Word/PDF
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-center text-info font-weight-bold"><i
+                            class="fas fa-exclamation-triangle fa-sm fa-fw mr-1"></i> La hoja de vida en Word/PDF
+                        seleccionada, se añadirá como anexo a la actual. ¿Está seguro(a)? <i
+                            class="fas fa-exclamation-triangle fa-sm fa-fw mr-1"></i></h6>
+                    <div class="text-info font-italic">
+                        <p class="mb-0">Datos:</p>
+                        <p id="nomb_file" class="mb-0"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <label id="editHdvMessage" class="text-info float-left"></label>
+                    <button class="btn btn-secondary rounded-pill" data-dismiss="modal" id="restablecerHdv"
+                        onclick="restablecerHdv()">CANCELAR</button>
+                    <button id="editEstadoVisibleHdv" class="btn btn-info rounded-pill">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Eliminar-->
+    <div class="modal fade" id="deletehdv" tabindex="-1" role="dialog" aria-labelledby="deleteEstudioLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteEstudioLabel">Eliminar Hoja de Vida en Word/PDF </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-center text-danger font-weight-bold"><i
+                            class="fas fa-exclamation-triangle fa-sm fa-fw mr-1"></i> Se eliminará la hoja de vida en
+                        Word/PDF seleccionada. ¿Está seguro(a)? <i
+                            class="fas fa-exclamation-triangle fa-sm fa-fw mr-1"></i></h6>
+                    <div class="text-danger font-italic">
+                        <p class="mb-0">Datos:</p>
+                        <p id="nomb_hdv" class="mb-0"></p>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <label id="deleteHdvMessage" class="text-danger float-left"></label>
+                    <button class="btn btn-secondary rounded-pill" data-dismiss="modal" id="restablecerHdv"
+                        onclick="restablecerHdv()">CANCELAR</button>
+                    <button id="deleteHdv" class="btn btn-danger rounded-pill">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

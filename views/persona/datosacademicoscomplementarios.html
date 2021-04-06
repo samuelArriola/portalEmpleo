@@ -1,0 +1,115 @@
+<div class="container">
+    <div class="pt-5 pb-2">
+    <ul class="nav nav-pills justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/panel"><i class="fas fa-home fa-sm fa-fw mr-1 text-secondary"></i>Panel</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/hojadevida"><i class="fas  fa-file-alt fa-sm fa-fw mr-1 text-secondary"></i>Hoja de Vida</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/datosacademicos"><i class="fas fa-graduation-cap fa-sm fa-fw mr-1 text-secondary"></i> Formación Académica</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active rounded-pill" style="background-color: #17a2b8;border-color: #17a2b8;"
+            href="<?php echo constant('URL');?>persona/datosacademicoscomplementarios"><i class="fas fa-user-graduate fa-sm fa-fw mr-1 text-white"></i> Formación Complementaria</a>
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="pt-3 pb-2">
+            <h5 class="text-left text-dark pl-2 text-uppercase font-weight-bolder" style="border-left: 4px solid #336699;">Formación Académica Complementaria</h5>
+            <p class="text-justify">En esta sección usted, podrá digitar la información de conocimientos o habilidades adquiridas de manera empírica o realizando
+                cursos, talleres y diplomados que le han permitido complementar su preparación académica.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <div id="divcursos-idiomas">
+        <div class="card border-info mb-3">
+            <div class="card-header border-info font-weight-bold" style="background: #86bbd894;color:#043b75;">Cursos e Idiomas</div>
+            <div class="card-body text-dark">
+                <form data-toggle="validator" id="validate" method="post" enctype="multipart/form-data">
+                    <div class="form-row">
+                        
+                        <div class="form-group col-md-12">
+                            <label>Cursos:</label>
+                            <textarea  rows="3" class="form-control" name="cursos" id="cursos" placeholder=""></textarea>
+                        </div>
+                        
+                        <div class="form-group col-md-12">
+                            <label>Manejo de segunda lengua:</label>
+                            <select type="text" class="form-control" name="id_idioma" id="id_idioma" placeholder="">
+
+                            </select>
+                        </div>
+                        
+                        <div class="form-group col-md-12">
+                            <label>Nivel (Habla, escucha, entiende)</label>
+                            <select class="form-control" name="n_idioma" id="n_idioma">
+                                <option value="0">Básico</option>
+                                <option value="1">Intermedio</option>
+                                <option value="2">Avanzado</option>
+                              </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer border-info" style="background: #86bbd894;">
+                <button class="btn btn-info rounded-pill float-right" id="btnacademicoplus">
+                    <i class="fas fa-sync text-white"></i>
+                    Actualizar
+                </button>
+            </div>
+          </div>
+        </div>
+        <div id="divsinregistros">
+            <div class="card border-info mb-3">
+                <div class="card-header border-info font-weight-bold" style="background: #86bbd894;color:#043b75;">Cursos e Idiomas</div>
+                <div class="card-body text-center">
+                    <p class="text-center text-dark font-italic">No hay registros almancenados en el sistema.</p>
+                    <center><img class="img-add" src="<?php echo constant('URL');?>resource/images/imgFiles/add.png" /></center>
+                </div>
+                <div class="card-footer border-info" style="background: #86bbd894;">
+                    <button class="btn btn-success rounded-pill float-right" id="btnshow">
+                        <i class="fas fa-plus text-white"></i> Registrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="card border-info mb-3">
+            <div class="card-header border-info font-weight-bold" style="background: #86bbd894;color:#043b75;">Aplicaciones Tecnológicas</div>
+            <div class="card-body text-dark">
+              <p class="card-text">Seleccione todas las aplicaciones tecnológicas que maneja: </p>
+              <div class="pl-3 pr-3">
+                <form data-toggle="validator" id="validate" method="post" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                           <div class="row">
+                               <div class="col-12">
+                                <div class="row" id="listTecnologias">
+
+                                </div>
+                               </div>
+                           </div> 
+                        </div>
+                    </div>
+                </form>
+              </div>
+            </div>
+            <div class="card-footer border-info" style="background: #86bbd894;">
+                <button class="btn btn-info rounded-pill float-right" id="btntecnologias">
+                    <i class="fas fa-sync text-white"></i>
+                    Actualizar
+                </button>
+            </div>
+          </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,355 @@
+[02-Mar-2020 12:44:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function getArraySQL() in /home/cedetec/public_html/portal_empleo/models/admin_model.php:12
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 12
+[02-Mar-2020 12:48:18 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on array in /home/cedetec/public_html/portal_empleo/models/admin_model.php:12
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 12
+[02-Mar-2020 12:52:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on array in /home/cedetec/public_html/portal_empleo/models/admin_model.php:12
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 12
+[02-Mar-2020 13:01:59 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch() on array in /home/cedetec/public_html/portal_empleo/models/admin_model.php:11
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 11
+[02-Mar-2020 13:03:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 11
+[02-Mar-2020 13:06:54 America/Chicago] PHP Fatal error:  Cannot use [] for reading in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 13
+[02-Mar-2020 13:10:03 America/Chicago] PHP Fatal error:  Cannot use [] for reading in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 13
+[02-Mar-2020 13:13:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetchAll() on array in /home/cedetec/public_html/portal_empleo/models/admin_model.php:11
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 11
+[02-Mar-2020 13:26:00 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_object() on null in /home/cedetec/public_html/portal_empleo/models/admin_model.php:14
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 14
+[02-Mar-2020 13:29:32 America/Chicago] PHP Parse error:  syntax error, unexpected '@', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 14
+[02-Mar-2020 13:34:42 America/Chicago] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 11
+[02-Mar-2020 13:37:45 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on array in /home/cedetec/public_html/portal_empleo/models/admin_model.php:12
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 12
+[02-Mar-2020 19:44:29 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function num_rows() on array in /home/cedetec/public_html/portal_empleo/models/admin_model.php:11
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 11
+[02-Mar-2020 19:44:59 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function row_array() on array in /home/cedetec/public_html/portal_empleo/models/admin_model.php:12
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 12
+[03-Mar-2020 15:04:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function [{"codi_iden":"0","desc_iden":"No Registra"}]() in /home/cedetec/public_html/portal_empleo/models/admin_model.php:17
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 17
+[03-Mar-2020 15:29:42 America/Chicago] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/cedetec/public_html/portal_empleo/library/queryManager.php:32
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/library/paginador.php(38): queryManager->select1('codi_iden,id,no...', 'persona', NULL, NULL)
+#1 /home/cedetec/public_html/portal_empleo/models/admin_model.php(114): paginador->paginador('codi_iden,id,no...', 'persona', 'Users', '1', ' WHERE id LIKE ...', Array)
+#2 /home/cedetec/public_html/portal_empleo/controllers/admin.php(48): admin_model->getUsers('', '1', Object(paginador))
+#3 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getUsers()
+#4 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/library/queryManager.php on line 32
+[03-Mar-2020 15:29:49 America/Chicago] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/cedetec/public_html/portal_empleo/library/queryManager.php:32
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/models/admin_model.php(24): queryManager->select1('*', 'cat_persona', NULL, NULL)
+#1 /home/cedetec/public_html/portal_empleo/controllers/admin.php(37): admin_model->getCategorias()
+#2 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getCategorias()
+#3 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/library/queryManager.php on line 32
+[03-Mar-2020 15:29:49 America/Chicago] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/cedetec/public_html/portal_empleo/library/queryManager.php:32
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/models/admin_model.php(10): queryManager->select1('codi_iden,desc_...', 'tipo_identifica...', NULL, NULL)
+#1 /home/cedetec/public_html/portal_empleo/controllers/admin.php(28): admin_model->getIdentificaciones()
+#2 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getIdentificaciones()
+#3 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/library/queryManager.php on line 32
+[03-Mar-2020 15:29:50 America/Chicago] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/cedetec/public_html/portal_empleo/library/queryManager.php:32
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/library/paginador.php(38): queryManager->select1('codi_iden,id,no...', 'persona', NULL, NULL)
+#1 /home/cedetec/public_html/portal_empleo/models/admin_model.php(114): paginador->paginador('codi_iden,id,no...', 'persona', 'Users', NULL, ' WHERE id LIKE ...', Array)
+#2 /home/cedetec/public_html/portal_empleo/controllers/admin.php(48): admin_model->getUsers('', NULL, Object(paginador))
+#3 /home/cedetec/public_html/portal_empleo/index.php(52): admin->getUsers()
+#4 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/library/queryManager.php on line 32
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:30 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:31:38 America/Chicago] PHP Warning:  array_map(): Argument #2 should be an array in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:32:10 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:00 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:34:46 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:36:40 America/Chicago] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 16
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:43:34 America/Chicago] PHP Warning:  iconv() expects parameter 3 to be string, array given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 15:44:51 America/Chicago] PHP Warning:  json_encode() expects parameter 2 to be integer, string given in /home/cedetec/public_html/portal_empleo/models/admin_model.php on line 15
+[03-Mar-2020 16:11:59 America/Chicago] PHP Warning:  Illegal string offset 'results' in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 49
+[03-Mar-2020 16:14:55 America/Chicago] PHP Warning:  Illegal string offset 'results' in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 49
+[03-Mar-2020 16:14:55 America/Chicago] PHP Warning:  Illegal string offset '{' in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 50
+[03-Mar-2020 16:15:38 America/Chicago] PHP Warning:  Illegal string offset 'results' in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 49
+[03-Mar-2020 16:21:30 America/Chicago] PHP Warning:  Illegal string offset 'results' in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 49
+[03-Mar-2020 16:21:54 America/Chicago] PHP Warning:  Illegal string offset 'results' in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 49
+[03-Mar-2020 16:24:17 America/Chicago] PHP Warning:  Illegal string offset 'pagi_navegacion' in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 49
+[03-Mar-2020 16:32:36 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/personas/56565656568.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[03-Mar-2020 16:32:36 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/personas/56565656568.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 193
+[03-Mar-2020 16:33:16 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/personas/999876554.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[03-Mar-2020 16:33:16 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/personas/999876554.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 193
+[03-Mar-2020 16:36:28 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/personas/999876554.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[03-Mar-2020 16:36:28 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/personas/999876554.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 193
+[03-Mar-2020 16:37:27 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/personas/999876554.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[03-Mar-2020 16:37:27 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/personas/999876554.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 193
+[05-Mar-2020 11:29:16 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/personas/1235039530.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[05-Mar-2020 11:29:16 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/personas/1235039530.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 202
+[05-Mar-2020 15:20:32 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function admin::editUser(), 0 passed in /home/cedetec/public_html/portal_empleo/index.php on line 52 and exactly 3 expected in /home/cedetec/public_html/portal_empleo/controllers/admin.php:185
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/index.php(52): admin->editUser()
+#1 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 185
+[06-Mar-2020 10:14:20 America/Chicago] PHP Warning:  require(views/user/privilegios.html): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/views.php on line 10
+[06-Mar-2020 10:14:20 America/Chicago] PHP Warning:  require(views/user/privilegios.html): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/views.php on line 10
+[06-Mar-2020 10:14:20 America/Chicago] PHP Fatal error:  require(): Failed opening required 'views/user/privilegios.html' (include_path='.:/opt/php71/lib/php') in /home/cedetec/public_html/portal_empleo/library/views.php on line 10
+[06-Mar-2020 11:18:18 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 186
+[09-Mar-2020 15:34:11 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/empresas/user.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[09-Mar-2020 15:34:11 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/empresas/user.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 421
+[09-Mar-2020 15:39:26 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/empresas/user.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[09-Mar-2020 15:39:26 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/empresas/user.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 421
+[09-Mar-2020 15:46:51 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/empresas/user.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[09-Mar-2020 15:46:51 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/empresas/user.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 421
+[09-Mar-2020 15:47:39 America/Chicago] PHP Warning:  copy(resourse/images/perfiles/empresas/user.png): failed to open stream: No such file or directory in /home/cedetec/public_html/portal_empleo/library/Uploadimage.php on line 18
+[09-Mar-2020 15:47:39 America/Chicago] PHP Warning:  unlink(resourse/images/perfiles/empresas/user.png): No such file or directory in /home/cedetec/public_html/portal_empleo/controllers/admin.php on line 421
+[16-Mar-2020 12:04:43 America/Chicago] PHP Warning:  A non-numeric value encountered in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 98
+[16-Mar-2020 12:04:43 America/Chicago] PHP Warning:  A non-numeric value encountered in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 98
+[16-Mar-2020 12:04:43 America/Chicago] PHP Warning:  A non-numeric value encountered in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 98
+[16-Mar-2020 12:04:43 America/Chicago] PHP Warning:  A non-numeric value encountered in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 98
+[16-Mar-2020 12:04:43 America/Chicago] PHP Warning:  A non-numeric value encountered in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 98
+[16-Mar-2020 19:34:05 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 172
+[16-Mar-2020 20:40:31 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function empresa::postRegistroConvo(), 0 passed in /home/cedetec/public_html/portal_empleo/index.php on line 52 and exactly 1 expected in /home/cedetec/public_html/portal_empleo/controllers/empresa.php:125
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/index.php(52): empresa->postRegistroConvo()
+#1 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 125
+[16-Mar-2020 20:40:31 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function empresa::postRegistroConvo(), 0 passed in /home/cedetec/public_html/portal_empleo/index.php on line 52 and exactly 1 expected in /home/cedetec/public_html/portal_empleo/controllers/empresa.php:125
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/index.php(52): empresa->postRegistroConvo()
+#1 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 125
+[16-Mar-2020 20:40:31 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function empresa::postRegistroConvo(), 0 passed in /home/cedetec/public_html/portal_empleo/index.php on line 52 and exactly 1 expected in /home/cedetec/public_html/portal_empleo/controllers/empresa.php:125
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/index.php(52): empresa->postRegistroConvo()
+#1 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 125
+[16-Mar-2020 20:40:31 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function empresa::postRegistroConvo(), 0 passed in /home/cedetec/public_html/portal_empleo/index.php on line 52 and exactly 1 expected in /home/cedetec/public_html/portal_empleo/controllers/empresa.php:125
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/index.php(52): empresa->postRegistroConvo()
+#1 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/controllers/empresa.php on line 125
+[18-Mar-2020 12:02:40 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:41 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:41 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:42 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:42 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:42 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:44 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:44 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:44 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:44 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[18-Mar-2020 12:02:44 America/Chicago] PHP Warning:  Unsupported declare 'strict_type' in /home/cedetec/public_html/portal_empleo/library/anonymous.php on line 5
+[19-Mar-2020 14:43:45 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function queryManager::select1(), 3 passed in /home/cedetec/public_html/portal_empleo/models/empresa_model.php on line 40 and exactly 4 expected in /home/cedetec/public_html/portal_empleo/library/queryManager.php:18
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/models/empresa_model.php(40): queryManager->select1('*', 'convocatoria', NULL)
+#1 /home/cedetec/public_html/portal_empleo/controllers/empresa.php(177): empresa_model->registerConvocatorias(Object(class@anonymous))
+#2 /home/cedetec/public_html/portal_empleo/index.php(52): empresa->registerConvocatorias()
+#3 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/library/queryManager.php on line 18
+[19-Mar-2020 15:07:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function lastInsertId() on array in /home/cedetec/public_html/portal_empleo/models/empresa_model.php:40
+Stack trace:
+#0 /home/cedetec/public_html/portal_empleo/controllers/empresa.php(177): empresa_model->registerConvocatorias(Object(class@anonymous))
+#1 /home/cedetec/public_html/portal_empleo/index.php(52): empresa->registerConvocatorias()
+#2 {main}
+  thrown in /home/cedetec/public_html/portal_empleo/models/empresa_model.php on line 40

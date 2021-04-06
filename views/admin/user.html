@@ -1,0 +1,165 @@
+<div class="container pt-5 pb-5 bg-white">
+    <h3>Gestión de Usuarios</h3>
+<ul class="nav nav-pills justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="<?php echo constant('URL');?>admin/options">Inicio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="<?php echo constant('URL');?>admin/panel">Panel de Administración</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active btn btn-outline-primary" href="<?php echo constant('URL');?>admin/user">Gestión de Usuarios</a>
+  </li>
+</ul>
+
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 pt-2 pb-3">
+
+            <!-- Button trigger modal -->
+            <button class="btn btn-info" data-toggle="modal" data-target="#adduser">
+                <i class="fas fa-user-plus text-white"></i>
+                Registrar
+            </button>
+        </div>
+        <div class="col-xl-10 col-lg-10 pt-2 pb-3">
+            <label>Buscar usuario</label>
+            <input type="text" class="form-control" name="filtrarUser" id="filtrarUser" placeholder="Buscar usuario"
+                onkeyup="getUsers(1);">
+        </div>
+        <div class="col-xl-12 col-lg-12">
+            <table id="table_user" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Identificación</th>
+                        <th>Nombre completo</th>
+                        <th>Dirección</th>
+                        <th>Categoría</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsUser">
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                    <ul class="pagination" id="paginador">
+
+                    </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+<!-- Modal Registro-->
+<div class="modal fade" id="adduser" tabindex="-1" role="dialog" aria-labelledby="adduserTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <form id="validate" enctype="multipart/form-data" method="POST">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adduserTitle">Registrar usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-group">
+                        <div class="card pt-b2">
+                            <div class="card-body text-center">
+                                <center>
+                                    <h6>Subir foto o imagen</h6>
+                                    <output class="d-flex justify-content-center pt-1 pb-1" id="fotos"></output>
+                                </center>
+                                <a>
+                                    <center>
+                                        <div class="form-group d-flex justify-content-center">
+                                            <input accept="image/*" type="file" class="form-control-file" id="foto_pers"
+                                                name="foto_pers" style="width: 334px;">
+                                        </div>
+                                    </center>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Nombres</label>
+                            <input type="text" class="form-control" name="nomb_pers" id="nomb_pers" placeholder=""
+                                style="text-transform:uppercase;" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Apellidos</label>
+                            <input type="text" class="form-control" name="ape_pers" id="ape_pers" placeholder=""
+                                style="text-transform:uppercase;" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Tipo Identificación</label>
+                            <select type="text" class="form-control" name="codi_iden" id="codi_iden" placeholder=""
+                                required>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="id">N° de Identificación</label>
+                            <input type="number" class="form-control underlined" name="id" id="id"
+                                placeholder="Digite N° de identificación" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Dirección</label>
+                            <input type="text" class="form-control" name="direccion" id="direccion" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Categoría</label>
+                            <select type="text" class="form-control" name="id_cat" id="id_cat" placeholder="" required>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control underlined" name="password" id="password"
+                                minlength="8" maxlength="16" placeholder="Digite su contraseña" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <label id="registerUMessage" class="text-danger float-left"></label>
+                    <button id="registerClose" class="btn btn-secondary" data-dismiss="modal">CANCELAR</button>
+                    <button id="btn-registro" class="btn btn-success">REGISTRAR</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--Modal eliminar-->
+      <div class="modal fade" id="deleteUser" tabindex="-1" role="dialog" aria-labelledby="deleteUserLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="deleteUserLabel">Eliminar usuario</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center">¿Está seguro de eliminar al usuario?</h4>
+                <p>Datos:</p>
+              <p id="iduser"></p>
+              <p id="nombreuser"></p>
+            </div>
+            <div class="modal-footer">
+                <label id="deleteUMessage" class="text-danger float-left"></label>
+                <button class="btn btn-secondary" data-dismiss="modal">CANCELAR</button>
+                <button id="deleteUser" class="btn btn-danger">ACEPTAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>

@@ -1,0 +1,187 @@
+<div class="container">
+    <div class="pt-5 pb-2">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/panel"><i class="fas fa-home fa-sm fa-fw mr-1 text-secondary"></i>Panel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/hojadevida"><i class="fas  fa-file-alt fa-sm fa-fw mr-1 text-secondary"></i>Hoja de Vida</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active rounded-pill" style="background-color: #17a2b8;border-color: #17a2b8;"
+                href="<?php echo constant('URL');?>persona/datosacademicos"><i class="fas fa-graduation-cap fa-sm fa-fw mr-1 text-white"></i> Formación Académica</a>
+            </li>
+        </ul>
+    </div>
+
+      
+      <div class="row">
+        <div class="col-md-12">
+            <div class="pt-3 pb-2">
+                <h5 class="text-left text-dark pl-2 text-uppercase font-weight-bolder" style="border-left: 4px solid #336699;">Formación Académica</h5>
+            </div>
+        </div>
+        
+        <div class="col-xl-9 col-lg-9 pt-2 pb-3 pr-0 mr-0">
+            <!-- Button trigger modal -->
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-success rounded-pill" data-toggle="modal" data-target="#addestudios">
+                        <i class="fas fa-plus text-white"></i>
+                        Registrar
+                    </button>
+                  </div>
+
+                  <div class="col">
+                    <label class="my-1 mr-2">Buscar Estudio</label>
+                <input type="text" class="form-control" name="filtrarEstudio" id="filtrarEstudio"
+                    placeholder="Digite el título o programa académico" onkeyup="getListaEstudios(1);">
+                  </div>
+            </div>
+
+            </div>
+
+        <div class="col-xl-3 col-lg-3 mb-2">
+            <div class="card">
+                <div class="card-body text-center">
+                  <p class="card-title">F. Académica Complementaria</p>
+                  <a href="<?php echo constant('URL');?>persona/datosacademicoscomplementarios" class="btn btn-success rounded-pill"><i class="fas fa-plus text-white"></i> Ver Más</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12">
+            <table id="table_user" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Programa Académico</th>
+                        <th>Institución</th>
+                        <th>Estado</th>
+                        <th>Fecha de Graduación</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsEstudios">
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination" id="paginador">
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!-- Modal Registro-->
+    <div class="modal fade" id="addestudios" tabindex="-1" role="dialog" aria-labelledby="addestudiosTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <form data-toggle="validator" id="validateREstudio" method="post" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addestudiosTitle">Registrar Estudio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Nivel Educativo</label>
+                                <select type="text" class="form-control" name="nivel_educativo" id="nivel_educativo"
+                                    placeholder="" required>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Título académico</label>
+                                <input type="text" class="form-control" name="titulo" id="titulo" required/>
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>Institución</label>
+                                <input type="text" class="form-control" name="institucion" id="institucion" required/>
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label>Estado</label>
+                                <select type="text" class="form-control" name="estado" id="estado" placeholder="" required>
+                                    <option value="0" disabled selected>Seleccione una estado</option>
+                                    <option value="1">En curso</option>
+                                    <option value="2">Completo</option>
+                                    <option value="3">Incompleto</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="">Fecha de graduación</label>
+                                <input type="date" class="form-control underlined" name="grado" id="grado"
+                                    placeholder="Digite su contraseña">
+                            </div>
+                        </div>
+                        <div class="card-group">
+                            <div class="card pt-b2">
+                                <div class="card-body text-center">
+                                    <center>
+                                        <h6>Subir foto o imagen del soporte académico</h6>
+                                        <output class="d-flex justify-content-center pt-1 pb-1" id="soporteUser" name="soporteUser"></output>
+                                    </center>
+                                    <a>
+                                        <center>
+                                            <div class="form-group d-flex justify-content-center">
+                                                <input accept="image/*" type="file" class="form-control-file"
+                                                    id="soporte" name="soporte" style="width: 334px;">
+                                            </div>
+                                        </center>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button id="registerEstudioClose" class="btn btn-secondary rounded-pill"
+                            data-dismiss="modal">CANCELAR</button>
+                        <button id="btnregistroestudio" class="btn btn-success rounded-pill">REGISTRAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Modal eliminar-->
+    <div class="modal fade" id="deletestudio" tabindex="-1" role="dialog" aria-labelledby="deleteEstudioLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="deleteEstudioLabel">Eliminar Estudio</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h6 class="text-center text-danger font-weight-bold"><i
+                    class="fas fa-exclamation-triangle fa-sm fa-fw mr-1"></i> Se eliminará el estudio seleccionado. ¿Está seguro(a)? <i
+                    class="fas fa-exclamation-triangle fa-sm fa-fw mr-1"></i></h6>
+                <div class="text-danger font-italic">
+                    <p>Datos:</p>
+                    <p id="nomb_titulo" class="mb-0"></p>
+                    <p id="nomb_institucion"></p>
+                </div>
+              
+            </div>
+            <div class="modal-footer">
+                <label id="deleteEMessage" class="text-danger float-left"></label>
+                <button class="btn btn-secondary rounded-pill" data-dismiss="modal">CANCELAR</button>
+                <button id="deleteEstudio" class="btn btn-danger rounded-pill">ACEPTAR</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</div>

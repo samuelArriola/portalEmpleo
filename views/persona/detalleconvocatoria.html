@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="pt-5">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/panel"><i
+                        class="fas fa-home fa-sm fa-fw mr-1 text-secondary"></i>Panel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="<?php echo constant('URL');?>persona/misconvocatorias"><i
+                        class="fas fa-bullhorn fa-sm fa-fw mr-1 text-secondary"></i> Convocatorias Laborales</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row pt-2 pb-3">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    Detalles de la Convocatoria
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title text-uppercase" id="perfil-title"></h6>
+                    <h6>Descripción del Cargo:</h6>
+                    <p class="card-text text-justify" id="descripcion-convo"></p>
+                    <p class="mb-0 font-weight-bold">Datos relevantes:</p>
+                </div>
+                <small>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="item-categoria"></li>
+                        <li class="list-group-item" id="item-contrato"></li>
+                        <li class="list-group-item" id="item-salario"></li>
+                    </ul>
+                </small>
+                <div class="card-body">
+                    
+                    <button id="btnregistropostulante" class="btn btn-info rounded-pill">Postularme</button>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div id="logo-empresa"></div>
+                <div class="card-body">
+                    <h6 class="card-title text-uppercase" id="nomb-empresa"></h6>
+                </div>
+                <small>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="item-telefono"></li>
+                        <li class="list-group-item" id="item-direccion"></li>
+                    </ul>
+                </small>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Convocatorias Laborales Similares</h6>
+                            <div id="listaConvoSimilares">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
